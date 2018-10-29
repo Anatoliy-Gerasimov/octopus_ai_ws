@@ -1,0 +1,7 @@
+Dockerfile
+docker-compose.yml
+.idea
+__pycache__
+.ipynb_checkpoints
+dataset
+models_train

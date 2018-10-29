@@ -1,13 +1,15 @@
-version: '2'
+version: '3'
 
 services:
   jupyter:
     container_name: workshop
-    image: ws_image
-    working_dir: /ws
+    image: ymiq/octopusai_ws:latest
     ports:
-      - "7777:8888"
+      - "8888:8888"
       - "6006:6006"
     volumes:
-      - .:/ws
-
+      - $PWD/TFODAPI.ipynb:/hearts/TFODAPI.ipynb
+      - $PWD/models_train:/hearts/models_train
+      - $PWD/dataset:/hearts/dataset
+    working_dir: '/hearts'
+    command: 'jupyter notebook --ip 0.0.0.0 --port 8888 --allow-root'
