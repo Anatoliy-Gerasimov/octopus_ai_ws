@@ -1,0 +1,13 @@
+version: '2'
+
+services:
+  jupyter:
+    container_name: workshop
+    image: ws_image
+    working_dir: /ws
+    ports:
+      - "7777:8888"
+      - "6006:6006"
+    volumes:
+      - .:/ws
+
