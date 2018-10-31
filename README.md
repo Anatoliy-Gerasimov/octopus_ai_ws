@@ -36,3 +36,12 @@ This branch of the repository is intended for CPU only use. If you have a Nvidia
 - Запустите `docker-compose up`
 - Подождите немного и перейдите по URL который увидите в jupyter-notebook.
 - Запустите все ячейки `test_notebook.ipynb`
+
+### Запуск под Windows
+
+Для запуска под Windows у вас должны быть установлены Docker и Docker Compose.
+А также `git bash`, с утилитами `xz`, `wget`
+#### Установка утилит
+Утилиты нужно скачать тут [xz](https://tukaani.org/xz/) и [wget](https://eternallybored.org/misc/wget/).
+И скопировать `.exe` файлы в папку `C:\Program Files\Git\mingw64\bin`.
+Затем можно запускать скрипт `./download_data.sh`.
