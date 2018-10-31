@@ -9,6 +9,7 @@ services:
       - "6006:6006"
     volumes:
       - $PWD/TFODAPI.ipynb:/hearts/TFODAPI.ipynb
+      - $PWD/test_notebook.ipynb:/hearts/test_notebook.ipynb
       - $PWD/models_train:/hearts/models_train
       - $PWD/dataset:/hearts/dataset
       - $PWD/autoencoder_ws:/hearts/autoencoder_ws
