@@ -13,5 +13,6 @@ services:
       - ./models_train:/hearts/models_train
       - ./dataset:/hearts/dataset
       - ./autoencoder_ws:/hearts/autoencoder_ws
+      - ./imgs:/hearts/imgs
     working_dir: '/hearts'
     command: 'jupyter notebook --ip 0.0.0.0 --port 8888 --allow-root'
